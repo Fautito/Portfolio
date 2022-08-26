@@ -1,0 +1,12 @@
+[
+    {
+      "name": "Javascript",
+      "state": true,
+      "img": "./db/img/JavaScript-logo.png"
+    },
+    {
+      "name": "Python",
+      "state": true,
+      "img": "./db/img/Python-logo.png"
+    }
+  ]
