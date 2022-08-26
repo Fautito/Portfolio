@@ -1,7 +1,7 @@
 # Portfolio
 This is my CV :)
 
-# Things pendant to add
+# Things pending to add
 - Color overlay on icons and projects when hover (svg filters)
 - Add technologies used in each project and display them 
 - List of courses
