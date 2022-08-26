@@ -6,6 +6,7 @@ This is my CV :)
 - Add technologies used in each project and display them 
 - List of courses
 - Assemble courses components and display them
+- Fix position of sections when browsing with nav menu
 - Animate transition between sections
 - Split js in diferent files
 - Make contact form send actual emails to me
