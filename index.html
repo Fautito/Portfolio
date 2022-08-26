@@ -1,39 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Gonzalo's Portfolio</title>
-</head>
-<body>
-    <nav id="navbar">
-        <ul>
-          <li><a href="#welcome-section" class="nav-link">About me</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+  <head>
+    <link rel="shortcut icon" href="https://apache.org/favicons/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gonzalo Faust CV</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="more">Show More</button>
+        <ul id="nav-bar">
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact me</a></li>
         </ul>
-        </nav>
-      <section id="welcome-section">
-        <h1>Hi! I am Gonzalo</h1>
-        <p>a web developer</p>
-      </section>
-      <section id="projects">
-        <div class="project-tile">
-          <p>A project</p>
-          <a href="#" class="project-link"></a>
-        </div>
-        <div class="project-tile"></div>
-        <div class="project-tile"></div>
-      </section>
-      <section id="contact">
-        <form action="" id="contact-form">
-          <p>Contact form</p>
+      </nav>
+    </header>
+    <section id="about-me">
+      <div class="container">
+        <h1>Hi, I'm Gonzalo</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+          corporis magni architecto modi voluptas repellendus exercitationem
+          consectetur excepturi, iusto totam veniam ut ratione ad, suscipit quae
+          hic quidem sit optio?
+        </p>
+      </div>
+    </section>
+    <section id="stack">
+      <div class="container">
+        <h2>Technologies I work with</h2>
+        <div class="flex-container"></div>
+        <!-- <img src="/db/img/JavaScript-logo.png" alt=""> -->
+      </div>
+    </section>
+    <section id="projects">
+      
+      <div class="container">
+        <h2>Some stuff I made</h2>
+        <div class="project-area"></div>
+      </div>
+    </section>
+    <section id="studies">
+      <div class="container">
+        <h2>Current, finished and future courses/studies</h2>
+      </div>
+    </section>
+    <section id="contact">
+      
+      <div class="container">
+        <h2>If you liked my work, please send me an e-mail! :)</h2>
+        <form action="submit" class="grid-container">
+          <div class="vertical-align">
+            <label for="name">Your name</label>
+            <input type="text" name="" id="name" placeholder="Who are you?"required />
+            <label for="mail">Your email</label>
+            <input type="email" name="" id="mail" placeholder="where can I contact you?" required/>
+          </div>
+          <div>
+            <input type="file"/>
+          </div>
+          <div class="vertical-align"></div>
+            <textarea name="" id="text" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send" />
+          </div>
         </form>
-      </section>
-      <footer id="foot">
-        <a href="https://github.com/Fautito" id="profile-link" target="_blank">My Github</a>
-      </footer>
-</body>
+      </div>
+    </section>
+    
+      <svg viewport="0 0 1 1">
+        <filter id="noiseFilter">
+          <feTurbulence type="fractalNoise" baseFrequency="0.5">
+
+          </feTurbulence>
+        </filter>
+      </svg>
+    
+    <footer>Lalalalalalalla</footer>
+    <script src="index.js" type="module"></script>
+  </body>
 </html>

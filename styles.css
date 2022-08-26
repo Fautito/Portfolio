@@ -1,66 +1,319 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
-
-*{
-  
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,400&family=Poppins:wght@200;300;400;500;700;900&display=swap');
 :root{
-  --blue:#003049;
-  --white:#EAE2B7;
-  --red:#D62828 ;
-  --orange:#F77F00 ;
-  --yellow:#FCBF49 ;
-}
+    --main-color:#040404;
+    --second-color:#F3F7F0;
+    --accent-color:#931621;
+    --ff-main: 'Poppins', sans-serif;
+    --ff-text: 'Merriweather', serif;
+  }
+/* ===============================getting ready============================== */
 
-@media(min-width:400px;){
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Anek Latin", sans-serif;
+}
+.invisible {
+  display: none;
+}
+html {
+  font-family: var(--ff-text);
+  font-size: 16px;
+  color:var(--main-color);
+}
+body{
+  background-color: var(--second-color);
   
 }
 
-#welcome-section{
-  height:100vh;
+
+
+
+/* ===============================basic stuff============================== */
+
+h1 {
+  font-family:var(--ff-main);
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 40px 5px 5px 5px;
+  color:var(--accent-color)
+}
+h2 {
+  font-family:var(--ff-main);
+  font-weight: 500;
+  padding: 15px 15px;
+}
+.card a{
+  display: block;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--main-color);
+
+}
+
+.card a{
+  cursor:pointer;
+}
+h5{
+  margin-top: 7px;
+  font-weight: 300;
+  display: block;
+  max-width: 80%;
+}
+
+p {
+  font-family:var(--ff-text);
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 30px;
+}
+
+nav ul li a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--main-color);
+}
+nav ul li a:hover {
+  color:var(--accent-color);
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  min-height: 3em;
+  background-color: var(--second-color);
+  z-index: 9;
+}
+nav ul li {
+  color:var(--main-color);
+  display: inline;
+  margin: 10px 20px;
+}
+nav ul {
+  margin: 5px 50px 0 0;
+  height: 100%;
+  list-style-type: none;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section{
+    background-color: var(--second-color);
+    color:var(--accent-color)
+}
+
+/* ==================== ids and classes ==================== */
+
+#more {
+    color: var(--main-color);
+  min-width: 5rem;
+  background-color: inherit;
+  border: 3px solid var(--main-color);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  display: none;
+}
+.image-item{
+    max-height: 50px; 
+    max-width:100px;
+    margin: 10px 15px;
+    filter:grayscale(100%) opacity(70%)
+  }
+  .image-container{
+    display: block;
+    content:'';
+    height: 100px;
+    width: 100px;
+    background-color: var(--accent-color);
+  }
+  .image-container:hover{
+    background-color: var(--accent-color);
+    
+  }
+.container {
+  max-width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+}
+.project-area{
+  width: 90%;
+  column-count: 3;
+  margin: 0 auto;
+  
+  
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+   grid-auto-flow: row; 
+  max-height: auto;
+  align-items: flex-start; */
+}
+.grid-container{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  max-height: 150vh;
+}
+.card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 15px;
+  align-items: center;
+  background-color: #ddd;
+  overflow:hidden;654r
+}
+
+.card .image-item{
+  max-width: 90%;
+  max-height: 250px;
+  margin: 10px; 
+}
+
+.vertical-align {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  font-family: 'Poppins';
-  font-style: bold;
   
-  background-image: linear-gradient(165deg, #eae2b7 0%, #fcbf49 100%);
-
-}
-#welcome-section>h1 {
-  font-size: 30pt;
-  color: var(--red);
-}
-#welcome-section>p {
-  font-size: 20pt;
-  position:relative;
-  top:-40px;
-  color:var(--blue);
 }
 
-#navbar{
-  background-color:var(--blue);
+#about-me,
+#projects,
+#contact,
+#studies {
+  min-height: 50vh;
+  max-height: auto;
+  width: 100%;
+}
+
+#about-me {
+  color: var(--main-color);
+  min-height: 20rem;
+  margin-top: 3em;
   display: flex;
-  flex-direction: column;;
-  position:fixed;
-  top:0px;
-  width:100%;
-  align-items: flex-end;
+}
+
+#stack {
+
+  min-height: 20vh;
+  height:none;
+}
+
+/*contact {
   
+}*/
+
+form .vertical-align{
+  max-width: 30vw;
+  /* position: relative;
+  left:30vw; */
+  align-items: flex-start;
+  margin-top:15px
+}
+textarea{
+  width: 70%;
+  resize:none;
+}
+input[type="text"],input[type="email"],textarea {
+  padding: 5px;
+  margin: 10px 0;
+  background-color: var(--second-color);
+  border: none;
+  border-bottom: 2px solid var(--accent-color);
+  border-left: 2px solid var(--accent-color);
+}
+form input[type="submit"]{
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--accent-color);
+  color:var(--second-color);
+  border: 0px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-self: flex-end;
+}
+form input[type="submit"]:hover{
+  background-color: var(--main-color);
+  color: var(--second-color);
+  cursor:pointer;
 }
 
-nav>ul{
-  list-style-type:none;
+/* #studies {
+  
+} */
+
+footer{
+    
+    color: var(--second-color);
+    background-color: var(--main-color);
+    height: 30vh;
 }
 
-nav>ul>li{
-  display: inline;
-  margin: 0px 20px;
+#stack .container{
+    Padding: 20px;
+    background-color: var(--second-color);
 }
 
-.nav-link{
-  text-decoration:none;
-  font-family: 'Poppins';
-  color: var(--white);
+
+
+/*==================== media queries ==================== */
+@media screen and (max-width: 768px) and (min-width:480px) {
+.project-area{
+  column-count: 2;
+}
+}
+@media screen and (max-width: 480px) {
+  nav ul {
+    margin: 0px;
+    width:100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--main-color);
+  }
+  
+  nav ul li a{
+    color:var(--second-color)
+  }
+
+  #about-me,
+  
+  #projects,
+  #contact,
+  #studies {
+    height: auto;
+    width: 100%;
+  }
+  #stack{
+    min-height: 30vh;
+  }
+
+  #more {
+    display: block;
+    position: absolute;
+    right: 3%;
+  }
+  .project-area{
+    
+    column-count: 1;
+   
+  }
 }
